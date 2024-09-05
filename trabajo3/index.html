@@ -62,6 +62,36 @@
             <h1>Notas Legales</h1>
             <iframe src="https://sasa71928.github.io/repositorioUABCS/trabajo1/index.html"></iframe>
         </section>
+        <section>
+            <h2>Contacto</h2>
+            <form action="/enviar" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" list="sugerencias-nombres" required>
+                <datalist id="sugerencias-nombres">
+                    <option value="Oscar"></option>
+                    <option value="Ana"></option>
+                    <option value="Luis"></option>
+                    <option value="María"></option>
+                </datalist>
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                <br>
+                <label for="motivo">Motivo de Contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <optgroup label="Soporte Técnico">
+                        <option value="problema">Reportar un problema</option>
+                        <option value="consulta">Consulta técnica</option>
+                    </optgroup>
+                    <optgroup label="Información General">
+                        <option value="sugerencia">Sugerencias</option>
+                        <option value="otros">Otros</option>
+                    </optgroup>
+                </select>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>© 2024 Sasa Consolas. Todos los derechos reservados.</p>
