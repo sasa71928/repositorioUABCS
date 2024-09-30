@@ -1,6 +1,7 @@
-body {
-    padding: 0;
+:root{
+    top: 0;
     margin: 0;
+    padding: 0;
     font-family: 'Ramaraja', Fira Sans, Arial, Helvetica, sans-serif; 
     font-size: 18px;
     background-color: #faf7e8;
@@ -8,7 +9,6 @@ body {
 }
 
 header {
-    padding: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,11 +16,12 @@ header {
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid #ACACAC;
+    flex-wrap:wrap ;
 }
 
 .logo {
-    font-size: 60px;
-    text-align: left; 
+    font-size: 3vw;
+    text-align: center; 
     text-decoration: none;
     margin-top: 0;
 }
@@ -31,16 +32,17 @@ header {
 }
 
 nav {
-    position: left;
+    position: center;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around; 
     width: 50%;
+    flex-wrap: wrap;
 }
 
 .nav-link {
     color: inherit; 
     text-decoration: none;
-    font-size: 28px; 
+    font-size: 1.5vw; 
 }
 
 .search-container {
@@ -49,12 +51,14 @@ nav {
     align-items: center;
     border-radius: 25px;
     padding: 5px;
+    flex-wrap: wrap;
 }
 
 .search-bar {
+    font-family: auto;
     background-color: #26435C;
     padding: 10px 20px;
-    font-size: 18px; 
+    font-size: 1vw; 
     border: none; 
     border-radius: 25px; 
     color: white;
