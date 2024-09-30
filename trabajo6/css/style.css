@@ -69,3 +69,33 @@ nav {
 .search-bar::placeholder {
     color: white; 
 }
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-contenido {
+    display: none;
+    position: absolute;
+    background-color: #26435C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-contenido a {
+    color: #faf7e8;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-contenido a:hover {
+    background-color:  #faf7e8;
+    color:  #26435C;
+}
+
+.menu:hover .menu-contenido {
+    display: block;
+}
