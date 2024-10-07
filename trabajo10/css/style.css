@@ -113,7 +113,11 @@ nav {
 }
 
 .tarjetas-container {
-    display:flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: space-between;
+    gap: 20px; 
+    justify-items: center; 
 }
 
 #caja1, #caja2, #caja3 {
