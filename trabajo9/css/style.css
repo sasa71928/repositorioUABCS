@@ -132,7 +132,7 @@ nav {
 }
 
 #caja1 h2, #caja2 h2 ,#caja3 h2  {
-    font-size: clamp(1.2rem, 2.5vw, 2rem); /* Ajuste del tamaño dinámico */
+    font-size: clamp(1.2rem, 2.5vw, 2rem); 
     margin: 0;
 }
 #caja1 p, #caja2 p, #caja3 p {
