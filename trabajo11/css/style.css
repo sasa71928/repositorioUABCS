@@ -1,15 +1,15 @@
 :root{
-    top: 0;
-    margin-top: 0;
-    padding: 0;
     font-family: 'Ramaraja', Fira Sans, Arial, Helvetica, sans-serif; 
     --primary-color: rgb(38, 67, 92);
     --secondary-color: #faf7e8;
 }
+
 body{
     color: var(--primary-color);
     background-color: var(--secondary-color);
     padding-top: 500px;
+    top: 0;
+    margin: 0;
 }
 
 header {
@@ -35,7 +35,6 @@ div {
     font-size: clamp(3rem, 6vw, 4rem);
     text-align: center; 
     text-decoration: none;
-    margin-top: 0;
 }
 
 .div-link{
@@ -44,6 +43,7 @@ div {
 }
 
 nav {
+    align-items: center;
     position: center;
     display: flex;
     justify-content: space-around; 
@@ -52,10 +52,10 @@ nav {
 }
 
 .nav-link {
-    padding: 5px;
+    padding: 10px;
     color: inherit; 
     text-decoration: none;
-    font-size: clamp(1.5rem, 1vw, 4rem);
+    font-size: clamp(1.5rem, 1.5vw, 4rem);
 }
 
 .search-container {
@@ -64,14 +64,14 @@ nav {
     align-items: center;
     border-radius: 25px;
     padding: 5px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .search-bar {
     font-family: auto;
     background-color: var(--primary-color);
     padding: 10px 20px;
-    font-size: clamp(1.2rem, 1vw, 4rem);
+    font-size: clamp(1rem, 1vw, 4rem);
     border: none; 
     border-radius: 25px; 
     color: white;
@@ -158,5 +158,32 @@ nav {
 }
 
 #caja1 b, #caja2 b,#caja3 b  {
-    font-size: 130%;
+    font-size: clamp(1.2rem, 1.5vw, 2rem); 
+}
+
+/*tablet*/
+@media (max-width: 794px) {
+    nav {
+        width: 100%; 
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        padding: 10px 20px;
+        font-size: clamp(1.5rem, 2vw, 3rem); 
+    }
+}
+
+/*movil*/
+
+@media (max-width: 477px) {
+    nav {
+        justify-content: space-around; 
+        width: 50%;
+    }
+
+    .nav-link {
+        padding: 10px 20px;
+        font-size: clamp(1.2rem, 2vw, 3rem);
+    }
 }
