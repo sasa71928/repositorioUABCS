@@ -13,3 +13,4 @@
 4. [Ejercicio #4 - estilos, pseudoelementos y pseudoclases](/trabajo7/index.html)
 5. [Ejercicio #5 - Sitio con tarjetas (Flex)](/trabajo8/index.html)
 6. [Ejercicio #6 - Variables y Funciones](/trabajo9/index.html)
+7. [Ejercicio #7 - CSS Grid](/trabajo10/index.html)
