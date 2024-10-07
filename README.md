@@ -12,3 +12,4 @@
 3. [Ejercicio #3 -Header sticky](/trabajo6/index.html)
 4. [Ejercicio #4 - estilos, pseudoelementos y pseudoclases](/trabajo7/index.html)
 5. [Ejercicio #5 - Sitio con tarjetas (Flex)](/trabajo8/index.html)
+6. [Ejercicio #6 - Variables y Funciones](/trabajo9/index.html)
