@@ -24,8 +24,11 @@ header {
     padding-bottom: 0.5vw
 }
 
+.menu-toggle {
+    display: none;
+}
+
 div {
-    
     display:flex;
     justify-content: center;
     flex-wrap: wrap; 
@@ -33,7 +36,7 @@ div {
 
 .logo {
     font-size: clamp(3rem, 6vw, 4rem);
-    text-align: center; 
+    text-align: center;
     text-decoration: none;
 }
 
@@ -55,7 +58,7 @@ nav {
     padding: 10px;
     color: inherit; 
     text-decoration: none;
-    font-size: clamp(1.5rem, 1.5vw, 4rem);
+    font-size: clamp(1.5rem, 1.3vw, 1.3rem);
 }
 
 .search-container {
@@ -71,7 +74,7 @@ nav {
     font-family: auto;
     background-color: var(--primary-color);
     padding: 10px 20px;
-    font-size: clamp(1rem, 1vw, 4rem);
+    font-size: clamp(0.8rem, 1.5vw, 1.3rem);
     border: none; 
     border-radius: 25px; 
     color: white;
@@ -182,14 +185,38 @@ nav {
 }
 
 /*movil*/
-
 @media (max-width: 477px) {
-    nav {
-        justify-content: space-around; 
-        width: 50%;
+
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+    }
+    
+    .logo{
+        width: 100%;
     }
 
-    .nav-link {
-        padding: 10px 20px;
+    nav {
+        display: none; 
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: var(--secondary-color);
+    }
+
+    .menu-toggle {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: var(--primary-color);
+        cursor: pointer;
     }
 }
+
