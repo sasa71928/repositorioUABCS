@@ -7,14 +7,13 @@
 body{
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    padding-top: 500px;
     top: 0;
     margin: 0;
 }
 
 header {
     background-color: var(--secondary-color);
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     display: flex;
@@ -22,6 +21,7 @@ header {
     justify-content: space-around;
     border-bottom: 1px solid #ACACAC;
     flex-wrap:wrap;
+    padding-bottom: 0.5vw
 }
 
 div {
@@ -161,6 +161,13 @@ nav {
     font-size: clamp(1.2rem, 1.5vw, 2rem); 
 }
 
+
+@media (max-width: 1440px){
+    header{
+        padding-bottom: 3%
+    }
+}
+
 /*tablet*/
 @media (max-width: 794px) {
     nav {
@@ -184,6 +191,5 @@ nav {
 
     .nav-link {
         padding: 10px 20px;
-        font-size: clamp(1.2rem, 2vw, 3rem);
     }
 }
