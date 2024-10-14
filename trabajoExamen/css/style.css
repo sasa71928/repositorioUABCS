@@ -132,6 +132,7 @@ nav {
     width: 300px;
     text-align: center;
     margin: 20px;
+    padding: 15px;
 }
 
 #caja1 img, #caja2 img, #caja3 img {
@@ -147,6 +148,7 @@ nav {
     font-size: clamp(1.2rem, 2.5vw, 2rem); 
     margin: 0;
 }
+
 #caja1 p, #caja2 p, #caja3 p {
     color: grey;
     font-size: 90%;
@@ -160,12 +162,121 @@ nav {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    padding: 5px 10px;
 }
 
 #caja1 b, #caja2 b,#caja3 b  {
     font-size: clamp(1.2rem, 1.5vw, 2rem); 
 }
 
+#referencia{
+    display: block;
+    background-color: var(--primary-color);
+    border-top: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+}
+
+#referencia article {
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+#referencia p {
+    margin: 0;
+}
+
+#referencia a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.seccion-titulo {
+    font-size: clamp(2rem, 3vw, 3rem); /* Tamaño responsive */
+    text-align: center; /* Alinear al centro */
+    padding: 10px; /* Espaciado superior e inferior */
+    color: var(--primary-color);
+}
+
+.cuestionario {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.cuestionario h2 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+form {
+    color: var(--secondary-color);
+}
+.form p{
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-align: center;
+    padding:auto;
+    color: var(--secondary-color);
+}
+.form-select, .form-control {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+input[type="email"] {
+    font-family: auto;
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.seccion-titulo-cuestionario{
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    text-align: center; 
+    color: var(--secondary-color);
+}
+
+.form-button {
+    display: block;
+    margin: 20px auto;
+    font-family: auto;
+    background-color: var(--secondary-color);
+    color: var(--primary-color); 
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.form-button:hover {
+    font-family: auto;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+label.form-label{
+    padding: 10px;
+    width: 100%;
+}
+
+form#notificaciones{
+    font-size: clamp(1rem, 3vw, 1.5rem);
+
+}
 
 @media (max-width: 1444px){
     header{

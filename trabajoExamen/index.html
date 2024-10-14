@@ -37,10 +37,10 @@
             <input type="text" placeholder="Buscar..." class="search-bar">
         </div>
     </header>
-    
+    <h2 class="seccion-titulo">Conoce Mas de Ti</h2>
     <div class= "tarjetas-container">
         <div id="caja1">
-            <img src="../trabajo11/img/img.jpg" alt="imagen belleza">
+            <img src="../trabajoExamen/img/img.jpg" alt="imagen belleza">
             <article>
                 <b>Conoce tu fototipo</b>
                 <p>Descubre cual es tu fototipo cutaneo</p>
@@ -48,7 +48,7 @@
             </article>
         </div>
         <div id="caja2">
-            <img src="../trabajo11/img/img.jpg" alt="imagen belleza">
+            <img src="../trabajoExamen/img/img.jpg" alt="imagen belleza">
             <article>
                 <b>Conoce tu tipo de piel</b>
                 <p>Descubre cual es tu fototipo cutaneo</p>
@@ -56,13 +56,44 @@
             </article>
         </div>
         <div id="caja3">
-            <img src="../trabajo11/img/img.jpg" alt="imagen belleza">
+            <img src="../trabajoExamen/img/img.jpg" alt="imagen belleza">
             <article>
                 <b>Cuidados de la piel</b>
                 <p>Descubre cual es tu fototipo cutaneo</p>
                 <a href="#">Leer Mas</a>
             </article>
         </div>
+    </div>
+    <div class="cuestionario">
+        <p class="seccion-titulo-cuestionario">¿Deseas recibir notificaciones?</p>
+        <form id="notificaciones">
+            <div class="mb-3">
+                <label for="email" class="form-label">Ingresa tu correo electronico:</label>
+                <input type="email" class="form-control" id="email" placeholder="tu-email@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Recibir notificaciones sobre:</label>
+                <div>
+                    <label for="new-products">Nuevos productos</label>
+                    <input type="checkbox" id="new-products" value="new-products">
+                </div>
+                <div>
+                    <label for="promotions">Promociones y ofertas</label>
+                    <input type="checkbox" id="promotions" value="promotions">
+                </div>
+                <div>
+                    <label for="skincare-tips">Consejos de cuidado de la piel</label>
+                    <input type="checkbox" id="skincare-tips" value="skincare-tips">
+                </div>
+            </div>
+            <button type="submit" class="form-button">Enviar</button>
+        </form>
+    </div>    
+    <div id="referencia">
+        <article>
+            <p>Referencias</p>
+            <p>Creado con: <a href="bootstrap/index.html" class="btn btn-primary"> Health Care</a></p>
+        </article>
     </div>
 </body>
 </html>
