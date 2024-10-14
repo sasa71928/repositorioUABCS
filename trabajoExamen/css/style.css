@@ -194,9 +194,9 @@ nav {
 }
 
 .seccion-titulo {
-    font-size: clamp(2rem, 3vw, 3rem); /* Tamaño responsive */
-    text-align: center; /* Alinear al centro */
-    padding: 10px; /* Espaciado superior e inferior */
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-align: center;
+    padding: 10px; 
     color: var(--primary-color);
 }
 
