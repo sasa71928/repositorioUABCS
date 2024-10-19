@@ -20,3 +20,4 @@
 ## UNIDAD JAVA SCRIPT
 
 1. [Ejercicio 1 - Calculadora](/trabajo12/index.html)
+2. [Ejercicio 2 - Manipulacion de Estilos](/trabajo13/index.html)
