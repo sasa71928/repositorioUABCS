@@ -1,8 +1,9 @@
-tareas = JSON.parse(localStorage.getItem('tareas') || []);
+let tareas = [];
 
-// Cargar tareas
 window.onload = function() {
-    mostrarTareas();
+    const tareasGuardadas = localStorage.getItem('tareas');
+    tareas = tareasGuardadas ? JSON.parse(tareasGuardadas) : [];
+    mostrarTareas(); 
 };
 
 //Agregar Tareas
