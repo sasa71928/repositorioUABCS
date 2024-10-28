@@ -21,3 +21,5 @@
 
 1. [Ejercicio 1 - Calculadora](/trabajo12/index.html)
 2. [Ejercicio 2 - Manipulacion de Estilos](/trabajo13/index.html)
+3. [Ejercicio 3 - Calculadora Visual]
+4. [Ejercicio 4 - Lista de tareas](/trabajo15/index.html)
