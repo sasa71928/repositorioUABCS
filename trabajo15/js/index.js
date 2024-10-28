@@ -1,8 +1,7 @@
-let tareas = [];
+tareas = JSON.parse(localStorage.getItem('tareas') || []);
 
 // Cargar tareas
 window.onload = function() {
-    tareas = JSON.parse(localStorage.getItem('tareas') || []);
     mostrarTareas();
 };
 
