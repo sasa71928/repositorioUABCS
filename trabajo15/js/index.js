@@ -2,7 +2,7 @@ let tareas = [];
 
 // Cargar tareas
 window.onload = function() {
-    tareas = JSON.parse(localStorage.getItem('tareas'));
+    tareas = JSON.parse(localStorage.getItem('tareas') || []);
     mostrarTareas();
 };
 
