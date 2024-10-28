@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionador de Tareas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+    /* Estilo de Tareas CSS */
+    .tarea-completa {
+        color: gray;
+        text-decoration: line-through;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Gestionador de Tarea</h1>
+        <input type="text" id="tareaInput" placeholder="Ingresa la Tarea" required class="form-control mb-3">
+        <button onclick="agregarTarea()" class="btn btn-primary">Agregar Tarea</button>
+        <p id="error" class="text-danger mt-3"></p>
+        <div id="tareasContainer" class="mt-4"></div>
+    </div>
+    <script src="../trabajo15/js/index.js" defer></script>
+</body>
+</html>
