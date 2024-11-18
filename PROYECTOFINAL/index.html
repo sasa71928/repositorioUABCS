@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Balance Company</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">  
+  <style>
+      .navbar-brand {
+        margin-left: 20px;
+      }
+      .carousel-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 500px; 
+
+      }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Life Balance Company</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="healthCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#healthCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#healthCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#healthCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/crema.jpg" class="d-block w-100" alt="Primera diapositiva">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Tu Salud, Nuestra Prioridad</h5>
+          <p>Ofreciendo servicios de salud expertos para todas tus necesidades.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/fototipo.jpeg" class="d-block w-100" alt="Segunda diapositiva">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Asesoramiento Médico Experto</h5>
+          <p>Nuestros especialistas están aquí para guiarte hacia una vida más saludable.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/family.jpg" class="d-block w-100" alt="Tercera diapositiva">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Cuidado Integral</h5>
+          <p>Desde diagnósticos hasta tratamientos, te tenemos cubierto.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#healthCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#healthCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <h1 class="text-center">Para ti</h1>
+
+
+  <!-- Tienda -->
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm product-card">
+            <img src="./img/hidratacion.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+              <h5 class="card-title">Crema Hidratante</h5>
+              <p class="card-text">Hidrata y protege tu piel durante todo el día.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-primary">Comprar</button>
+                <small class="text-muted">$250 MXN</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloques -->
+        <div class="col">
+          <div class="card shadow-sm product-card">
+            <img src="./img/hidratacion.jpg" class="card-img-top" alt="Producto 2">
+            <div class="card-body">
+              <h5 class="card-title">Protector Solar</h5>
+              <p class="card-text">Protección UV de amplio espectro para toda la familia.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-primary">Comprar</button>
+                <small class="text-muted">$300 MXN</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm product-card">
+            <img src="./img/hidratacion.jpg" class="card-img-top" alt="Producto 2">
+            <div class="card-body">
+              <h5 class="card-title">Protector Solar</h5>
+              <p class="card-text">Protección UV de amplio espectro para toda la familia.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-primary">Comprar</button>
+                <small class="text-muted">$300 MXN</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fin del bloque -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="text-muted py-3">
+    <div class="container text-center">
+      <p>Life Balance Company © 2024 - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
