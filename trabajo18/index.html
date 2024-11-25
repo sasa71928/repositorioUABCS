@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitio Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a class="div-link" href="#">SKIN & BEAUTY</a>
+        </div>
+        <nav class="link-container">
+            <div class="menu">
+                <a class="nav-link" href="#">Cremas</a>
+                <div class="menu-contenido">
+                    <a href="#">Crema Hidratante</a>
+                    <a href="#">Crema Antiarrugas</a>
+                    <a href="#">Crema para Manos</a>
+                </div>
+            </div>
+            <a class="nav-link" href="#">Jabones</a>
+            <a class="nav-link" href="#">Bloqueadores</a>
+            <a class="nav-link" href="#">Serums</a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            ☰ 
+        </button>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Buscar..." class="search-bar">
+        </div>
+    </header>
+
+    <div class="slide">
+      <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+          <div class="slide-item">
+              <img src="./img/slide.jpg">
+              <div class="slide-text">
+                  <h1 class="slide-title">Titulo 1</h1>
+                  <p class="slide-subtitle">Subtítulo del primer slide</p>
+              </div>
+          </div>
+          <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+              <img src="./img/slide2.jpg">
+              <div class="slide-text">
+                  <h1 class="slide-title">Titulo 2</h1>
+                  <p class="slide-subtitle">Subtítulo del segundo slide</p>
+              </div>
+          </div>
+          <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+              <img src="./img/slide3.jpg">
+              <div class="slide-text">
+                  <h1 class="slide-title">Titulo 3</h1>
+                  <p class="slide-subtitle">Subtítulo del tercer slide</p>
+              </div>
+          </div>
+          <label for="slide-3" class="slide-control prev control-1">‹</label>
+          <label for="slide-2" class="slide-control next control-1">›</label>
+          <label for="slide-1" class="slide-control prev control-2">‹</label>
+          <label for="slide-3" class="slide-control next control-2">›</label>
+          <label for="slide-2" class="slide-control prev control-3">‹</label>
+          <label for="slide-1" class="slide-control next control-3">›</label>
+      </div>
+    </div>
+    
+    <h2 class="seccion-titulo">Conoce Mas de Ti</h2>
+    <div class= "tarjetas-container">
+        <div id="caja1">
+            <img src="../trabajoExamen/img/img.jpg" alt="imagen belleza">
+            <article>
+                <b>Conoce tu fototipo</b>
+                <p>Descubre cual es tu fototipo cutaneo</p>
+                <a href="#">Leer Mas</a>
+            </article>
+        </div>
+        <div id="caja2">
+            <img src="../trabajoExamen/img/img.jpg" alt="imagen belleza">
+            <article>
+                <b>Conoce tu tipo de piel</b>
+                <p>Descubre cual es tu fototipo cutaneo</p>
+                <a href="#">Leer Mas</a>
+            </article>
+        </div>
+        <div id="caja3">
+            <img src="../trabajoExamen/img/img.jpg" alt="imagen belleza">
+            <article>
+                <b>Cuidados de la piel</b>
+                <p>Descubre cual es tu fototipo cutaneo</p>
+                <a href="#">Leer Mas</a>
+            </article>
+        </div>
+    </div>
+
+    <div class="cuestionario">
+        <p class="seccion-titulo-cuestionario">¿Deseas recibir notificaciones?</p>
+        <form id="notificaciones">
+            <div class="mb-3">
+                <label for="email" class="form-label">Ingresa tu correo electronico:</label>
+                <input type="email" class="form-control" id="email" placeholder="tu-email@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Recibir notificaciones sobre:</label>
+                <div>
+                    <label for="new-products">Nuevos productos</label>
+                    <input type="checkbox" id="new-products" value="new-products">
+                </div>
+                <div>
+                    <label for="promotions">Promociones y ofertas</label>
+                    <input type="checkbox" id="promotions" value="promotions">
+                </div>
+                <div>
+                    <label for="skincare-tips">Consejos de cuidado de la piel</label>
+                    <input type="checkbox" id="skincare-tips" value="skincare-tips">
+                </div>
+            </div>
+            <button type="submit" class="form-button">Enviar</button>
+        </form>
+    </div>    
+    <div id="referencia">
+        <article>
+            <p>Referencias</p>
+            <p>Creado con: <a href="bootstrap/index.html" class="btn btn-primary"> Health Care</a></p>
+        </article>
+    </div>
+</body>
+</html>
