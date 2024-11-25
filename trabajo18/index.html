@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Sitio Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href=".//public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
       <div class="slide-inner">
           <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
           <div class="slide-item">
-              <img src="./img/slide.jpg">
+              <img src="./public/img/slide.jpg">
               <div class="slide-text">
                   <h1 class="slide-title">Titulo 1</h1>
                   <p class="slide-subtitle">Subtítulo del primer slide</p>
@@ -50,7 +50,7 @@
           </div>
           <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
           <div class="slide-item">
-              <img src="./img/slide2.jpg">
+              <img src="./public/img/slide2.jpg">
               <div class="slide-text">
                   <h1 class="slide-title">Titulo 2</h1>
                   <p class="slide-subtitle">Subtítulo del segundo slide</p>
@@ -58,7 +58,7 @@
           </div>
           <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
           <div class="slide-item">
-              <img src="./img/slide3.jpg">
+              <img src="./public/img/slide3.jpg">
               <div class="slide-text">
                   <h1 class="slide-title">Titulo 3</h1>
                   <p class="slide-subtitle">Subtítulo del tercer slide</p>
@@ -73,33 +73,13 @@
       </div>
     </div>
     
-    <h2 class="seccion-titulo">Conoce Mas de Ti</h2>
-    <div class= "tarjetas-container">
-        <div id="caja1">
-            <img src="../trabajoExamen/img/img.jpg" alt="imagen belleza">
-            <article>
-                <b>Conoce tu fototipo</b>
-                <p>Descubre cual es tu fototipo cutaneo</p>
-                <a href="#">Leer Mas</a>
-            </article>
-        </div>
-        <div id="caja2">
-            <img src="../trabajoExamen/img/img.jpg" alt="imagen belleza">
-            <article>
-                <b>Conoce tu tipo de piel</b>
-                <p>Descubre cual es tu fototipo cutaneo</p>
-                <a href="#">Leer Mas</a>
-            </article>
-        </div>
-        <div id="caja3">
-            <img src="../trabajoExamen/img/img.jpg" alt="imagen belleza">
-            <article>
-                <b>Cuidados de la piel</b>
-                <p>Descubre cual es tu fototipo cutaneo</p>
-                <a href="#">Leer Mas</a>
-            </article>
-        </div>
+    <h2 class="seccion-titulo">Para Ti</h2>
     </div>
+
+    <?php 
+    require __DIR__.'/../../helpers/functions.php';
+    $products = getAllProducts();
+    ?>
 
     <div class="cuestionario">
         <p class="seccion-titulo-cuestionario">¿Deseas recibir notificaciones?</p>
@@ -126,11 +106,5 @@
             <button type="submit" class="form-button">Enviar</button>
         </form>
     </div>    
-    <div id="referencia">
-        <article>
-            <p>Referencias</p>
-            <p>Creado con: <a href="bootstrap/index.html" class="btn btn-primary"> Health Care</a></p>
-        </article>
-    </div>
 </body>
 </html>
