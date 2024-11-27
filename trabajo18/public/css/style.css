@@ -19,7 +19,6 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-around;
     border-bottom: 1px solid #ACACAC;
     flex-wrap:wrap;
@@ -375,7 +374,6 @@ form#notificaciones{
     font-size: 40px;
     height: 30px;
     line-height: 35px;
-    position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
     cursor: pointer;
@@ -448,10 +446,13 @@ form#notificaciones{
     height: 100%;
 }
 .slide-title {
+    width: 100%;
     font-size: 2rem; 
     margin: 10px 0;
 }
 .slide-subtitle {
+    width: 100%;
     font-size: 1.2rem;
     margin: 5px 0;
 }
+

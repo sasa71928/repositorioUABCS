@@ -1,6 +1,6 @@
 <?php 
 
-$products = getCareerData();
+$products = getAllProducts();
 ?>
 <?php if($products != null): ?>
 <h2><?=$products['nombre']?> (<?=$products['caracteristicas']?> - <?=$products['precio']?>)</h2>
